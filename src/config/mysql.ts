@@ -4,13 +4,13 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 export const mysqlOptions = envConf<TypeOrmModuleOptions>({
   development: {
     type: 'mysql',
-    host: 'localhost',
-    port: 3306,
     username: 'root',
-    password: 'root',
-    database: 'nest_api_blog',
     autoLoadEntities: true,
     synchronize: true,
+    port: 7084,
+    host: 'containers-us-west-139.railway.app',
+    password: 'tS91dkC4aYBDzKZEM587',
+    database: 'railway', // 库名
   },
   production: {
     type: 'mysql',

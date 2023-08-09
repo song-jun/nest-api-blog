@@ -19,4 +19,4 @@ Content-Type: application/json
 }
 
 ### 2.3 获取访问
-GET {{base}}/visit/list
+GET {{base}}/visit/list?sort=sort
